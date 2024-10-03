@@ -27,4 +27,4 @@ RUN apt-get update && \
 EXPOSE 80
 
 # 使用 tini 作为进程管理器，启动 Python HTTP 服务器 和 nezha-agent
-ENTRYPOINT ["/usr/bin/tini", "-g", "--", "sh", "-c", "python3 -m http.server 8080 --bind 0.0.0.0 & ./nezha-agent -s ${domain}:${port} -p ${secret} ${args}"]
+ENTRYPOINT ["/usr/bin/tini", "-g", "--", "sh", "-c", "python3 -m http.server 80 --bind 0.0.0.0 & ./nezha-agent -s ${domain}:${port} -p ${secret} ${args}"]  
