@@ -1,7 +1,7 @@
 FROM debian:11-slim
 
 # 构建参数
-ARG NEZHA_VER=0.15.10
+ARG NEZHA_VER=0.19.8
 
 # 环境变量
 ENV domain="tzz.shiyue.eu.org" port="5555" secret="PWLUlk0I039zxuuZpP" args="--disable-auto-update" platform="" version=""        
