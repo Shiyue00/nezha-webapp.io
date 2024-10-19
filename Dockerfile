@@ -4,7 +4,7 @@ FROM debian:11-slim
 ARG NEZHA_VER=0.19.8
 
 # 环境变量
-ENV domain="tzz.shiyue.eu.org" port="5555" secret="PWLUlk0I039zxuuZpP" args="--disable-auto-update" platform="" version=""        
+ENV domain="tzz.shiyue.eu.org" port="5555" secret="2zGF1K2z8lRPmQ8iVB" args="--disable-auto-update" platform="" version=""          
 
 # 设置工作目录
 WORKDIR /usr/local/bin
